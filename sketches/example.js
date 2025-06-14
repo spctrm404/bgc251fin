@@ -1,7 +1,7 @@
 const { Responsive } = P5Template;
 
 function setup() {
-  new Responsive().createResponsiveCanvas(400, 300, 'contain', false);
+  new Responsive().createResponsiveCanvas(400, 300, 'fill', false);
   // "contain" | "fill" | "cover" | "none" | "scale-down"
 
   // "contain", true
@@ -24,7 +24,7 @@ function setup() {
 function draw() {
   background('#000000');
   noStroke();
-  fill('red');
+  fill('blue');
   circle(mouseX, mouseY, 100);
   Responsive.drawReferenceGrid('white');
   noStroke();
